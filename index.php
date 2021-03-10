@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <form action="placas.php" method="POST">
+<nav>
+    <form action="ManagerPlacas.php" method="POST">
         <label for="matricula">Ingrese el numero de matricula</label>
         <input type="text" name="matricula" required>
         <input type="submit" value="Consultar">
-        </form>
-    </nav>
+    </form>
+</nav>
 </body>
 </html>

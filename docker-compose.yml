@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  www:
+    build:
+      context: .docker/www
+      args:
+        - PHP_VERSION=${PHP_VERSION}
+    container_name: ${APP_NAME}-www
+    command: ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+    tty: true
+    volumes:
+      - ${APP_DIR}:/var/www/html
+    ports:
+      - ${HTTP_PORT}:80
